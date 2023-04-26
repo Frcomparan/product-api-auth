@@ -10,6 +10,7 @@ export const createProducts = async (req, res) => {
     imageURL,
   })
   const productSave = await newProduct.save()
+  console.log(productSave)
   res.status(201).json(productSave)
 }
 export const getProducts = async (req, res) => {
