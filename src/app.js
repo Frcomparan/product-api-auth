@@ -5,6 +5,7 @@ import productsRoutes from './routes/products.routes'
 
 const app = express()
 
+app.use(express.json())
 app.set('pkg', pkg)
 app.use(morgan('dev'))
 
